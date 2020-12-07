@@ -10,7 +10,7 @@ namespace SingletonChatApi.Models
 
         public Guid Id { get; set; } = Guid.NewGuid();
         public DateTime SendedIn { get; set; } = DateTime.UtcNow;
-        public string Sender
+        public string? Sender
         {
             get => _sender;
             set => _sender = value ?? "Anonymous";
